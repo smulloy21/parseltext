@@ -12,7 +12,7 @@ class NewVisitorTest(unittest.TestCase):
     def test_starting_a_new_blog(self):
         # Monty the Python loads up the page
         self.browser.get('http://localhost:8000')
-        self.assertIn('Django', self.browser.title)
+        self.assertIn('ParselText', self.browser.title)
 
 if __name__ == '__main__':
     unittest.main()
