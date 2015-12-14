@@ -10,4 +10,4 @@ class HomePageViewTest(TestCase):
         response = home_page(request)
         self.assertTrue(response.content.startswith(b'<html>'))
         self.assertIn(b'<title>ParselText</title>', response.content)
-        self.assertTrue(response.content.endswith(b'</html>'))
+        self.assertTrue(response.content.strip().endswith(b'</html>'))
